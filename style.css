@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&family=Montserrat:wght@100&display=swap");
+
+/* body {
+  font-family: Roboto;
+} */
+
+/* burger menu animation */
+.burger {
+  width: 42px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  background-color: #444444;
+  transition: all ease-in-out 0.6s;
+}
+.burger span {
+  width: 20px;
+  height: 3.1px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 27%;
+  transform: translateY(-20%);
+}
+.burger span::before,
+.burger span::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3.1px;
+  background-color: white;
+  transition: transform 0.6s ease-in-out;
+}
+.burger span::before {
+  transform: translateY(-7px);
+}
+
+.burger span::after {
+  transform: translateY(7px);
+}
+
+.burger.active {
+  right: 281.7px;
+}
+.burger.active span {
+  background-color: transparent;
+}
+
+.burger.active span::before {
+  transform: translateY(0px) rotateZ(45deg);
+}
+.burger.active span::after {
+  transform: translateY(0px) rotateZ(-45deg);
+}
+
+@media (max-width: 980px) {
+  .mobile-menu {
+    position: fixed;
+    right: -285px;
+    top: 88px;
+    transition: all ease-in-out 0.6s;
+  }
+  .logo {
+    position: fixed;
+    right: -285px;
+    transition: all ease-in-out 0.6s;
+  }
+  .logoVisible {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    transition: all ease-in-out 0.6s;
+  }
+  .visible {
+    position: fixed;
+    top: 88px;
+    right: 0px;
+    transition: all ease-in-out 0.6s;
+  }
+}
+
+/* Animation hover sur nav-bar menu  */
+
+.hover-animation a::before {
+  background: #272727 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.78;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.hover-animation a::after {
+  background: #272727 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  right: 100%;
+  opacity: 0.93;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform 0.6s;
+  transform-origin: right;
+}
+.hover-animation a:hover::after {
+  transform: scaleX(1);
+
+  background: #ff3740;
+  transform-origin: left;
+}
