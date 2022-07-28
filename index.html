@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -25,7 +25,7 @@
     <title>Vladyslav Dokounin</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="w-full">
     <!-- Header -->
     <div class="float-left pt-[92px] w-full">
       <header class="table float-left z-50 m-0 opacity-100 fixed top-0 w-full">
@@ -120,25 +120,25 @@
     <!-- Header -->
 
     <!-- Home -->
-    <section id="home">
+    <section id="home" class="block  relative z-10">
       <div>
         <div
-          class="bg-[url('/img/bgImg.jpg')] md:h-[100vh] h-[670px] md:bg-top md:pt-80 pt-24 pl-4"
+          class="bg-[url('/img/bgImg.jpg')] w-full  relative lg:h-screen h-[670px] lg:bg-top lg:pt-80 pt-24 pl-4"
         >
           <span
-            class="logo-animation font-thin text-white lg:text-3xl text-2xl md:pl-24"
+            class="logo-animation font-thin text-white lg:text-3xl text-2xl lg:pl-24"
             >Hi, I' m</span
           >
           <h2
-            class="logo-animation font-sans text-white font-bold md:text-8xl text-5xl pb-3 pt-1 md:pl-24 md:mb-1.5 tracking-tighter"
+            class="logo-animation font-sans text-white font-bold lg:text-8xl text-5xl pb-3 pt-1 lg:pl-24 lg:mb-1.5 tracking-tighter"
           >
             VLADYSLAV
           </h2>
           <h5
-            class="text-[#ff3740] md:text-2xl text-xl font-thin md:pl-24 flex"
+            class="text-[#ff3740] lg:text-2xl text-xl font-thin lg:pl-24 flex"
           >
             <svg
-              class="w-10 md:w-12 h-7.5 text-[#ff3740] md:pr-5 pr-3"
+              class="w-10 md:w-12 h-7.5 text-[#ff3740] lg:pr-5 pr-3"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512"
             >
@@ -152,17 +152,17 @@
           <img
             src="/img/react.png"
             alt="reactImg"
-            class="md:w-[420px] opacity-[.02] w-auto absolute right-0 md:bottom-40 md:left-40"
+            class="lg:w-[420px] opacity-[.02] w-auto absolute right-0 lg:bottom-40 lg:left-40"
           />
           <img
             src="/img/scroll.png"
             alt="scrioll-animation"
             width="100px"
-            class="animate-bounce scroll-down w-28 opacity-70 absolute bottom-0 right-32 md:bottom-10 md:right-[50%]"
+            class="animate-bounce scroll-down w-28 opacity-70 absolute bottom-0 left-[50%] -ml-[48px] lg:bottom-0 lg:left-[50%]"
           />
 
           <ul
-            class="relative top-48 md:pl-24 md:absolute md:top-40 flex md:pt-[500px]"
+            class="relative top-48 lg:pl-24 lg:absolute lg:top-40 flex lg:pt-[500px]"
           >
             <li>
               <a href="https://www.linkedin.com/in/vlad-dokounin/">
@@ -216,12 +216,12 @@
 
     <!-- About  -->
     <section id="about">
-      <div class="flex justify-center md:h-[100vh] pt-36">
+      <div class="flex justify-center md:h-full relative">
         <div
           class="card flex flex-col items-center justify-center bg-white rounded-lg shadow-m md:flex-row md:h-[800px] md:w-[1100px]"
         >
           <img
-            class="md:object-cover md:shadow-inner md:shadow-white md:rounded-t-lg md:h-auto w-96 h-auto md:w-96 md:rounded-none md:rounded-l-lg"
+            class="md:object-cover md:shadow-inner md:shadow-white md:rounded-t-lg md:h-auto lg:w-96 h-auto w-72 pt-[120px] md:rounded-none md:rounded-l-lg"
             src="/img/IMG_2940.jpg"
             alt="myPhoto"
           />
@@ -285,9 +285,9 @@
     <!-- Scills -->
     <section id="skills">
       <div
-        class="bg-[url('/img/parallax3-1.jpg')] relative md:bg-top md:h-[100vh] h-[800px] bg-transparent pl-2 pr-2"
+        class="bg-[url('/img/parallax3-1.jpg')] relative bg-top lg:h-[100vh]  bg-transparent pl-2 pr-2"
       >
-        <div class="md:ml-80 ml-3 md:pt-[200px] pt-[120px] mb-[60px]">
+        <div class="md:ml-80 ml-3 pt-[120px] mb-[60px]">
           <span class="text-lg tracking-widest text-[#ff3740] font-ight"
             >Ce que je sais faire</span
           >
@@ -382,7 +382,7 @@
       <div class="container mx-auto w-full h-full">
         <div class="relative wrap overflow-hidden p-10 h-full">
           <div
-            class="absolute border-opacity-20 border-gray-700  h-full border md:left-[50%] left-7"
+            class="absolute border-opacity-20 border-gray-700 h-full border md:left-[50%] left-7"
           ></div>
           <!-- right timeline -->
           <div
@@ -390,7 +390,7 @@
           >
             <div class="order-1 w-5/12"></div>
             <div
-              class="z-20 flex items-center order-1 bg-[#2c2c2c] md:shadow-xl w-12 h-12 rounded-full md:static absolute left-2 top-36"
+              class="z-20 flex items-center order-1 bg-[#2c2c2c] md:shadow-xl w-12 h-12 rounded-full md:static absolute left-1.5z top-36"
             >
               <h1 class="mx-auto font-semibold text-sm text-white">2022</h1>
             </div>
@@ -421,12 +421,12 @@
           >
             <div class="order-1 w-5/12"></div>
             <div
-              class="z-20 flex items-center order-1 bg-[#2c2c2c] shadow-xl w-12 h-12 rounded-full md:static absolute left-2 bottom-[455px]"
+              class="z-20 flex items-center order-1 bg-[#2c2c2c] shadow-xl w-12 h-12 rounded-full md:static absolute left-1.5 bottom-[455px]"
             >
               <h1 class="mx-auto text-white font-semibold text-sm">2016</h1>
             </div>
             <div
-              class="md:static order-1 bg-[#f2f2f2]  relative left-5 rounded-lg shadow-xl md:w-5/12 px-6 py-4 hover:scale-110"
+              class="md:static order-1 bg-[#f2f2f2] relative left-5 rounded-lg shadow-xl md:w-5/12 px-6 py-4 hover:scale-110"
             >
               <h3
                 class="mb-3 font-bold text-[#2c2c2c] text-xl font-[Montserrat]"
@@ -457,22 +457,25 @@
           >
             <div class="order-1 w-5/12"></div>
             <div
-              class="z-20 flex items-center order-1 bg-[#2c2c2c] shadow-xl w-12 h-12 rounded-full md:static absolute left-2 bottom-32"
+              class="z-20 flex items-center order-1 bg-[#2c2c2c] shadow-xl w-12 h-12 rounded-full md:static absolute left-1.5 bottom-32"
             >
               <h1 class="mx-auto font-semibold text-sm text-white">2012</h1>
             </div>
             <div
               class="md:static order-1 bg-[#f2f2f2] relative left-5 rounded-lg shadow-xl md:w-5/12 px-6 py-4 hover:scale-110"
             >
-              <h3 class="mb-3 font-bold text-[#2c2c2c] text-xl font-[Montserrat]">
-                Lycée Professionnel de la Construction et du Transport Automobile
-                (Kharkov, Ukraine) -<span class="text-[#ff3740] font-sans font-light text-base pl-1">2012 - 2015</span>
+              <h3
+                class="mb-3 font-bold text-[#2c2c2c] text-xl font-[Montserrat]"
+              >
+                Lycée Professionnel de la Construction et du Transport
+                Automobile (Kharkov, Ukraine) -<span
+                  class="text-[#ff3740] font-sans font-light text-base pl-1"
+                  >2012 - 2015</span
+                >
               </h3>
               <p
                 class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100"
-              >
-                
-              </p>
+              ></p>
             </div>
           </div>
         </div>
