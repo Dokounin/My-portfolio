@@ -11,7 +11,7 @@ burger.addEventListener("click", () => {
 // Logo animation
 var aText = new Array("Hi &#128075 I'm Developer");
 
-var iSpeed = 100;
+var iSpeed = 120;
 var iIndex = 0;
 var iArrLength = aText[0].length;
 var iScrollAt = 20;
@@ -35,7 +35,7 @@ function typewriter() {
     iIndex++;
     if (iIndex != aText.length) {
       iArrLength = aText[iIndex].length;
-      setTimeout("typewriter()", 1000);
+      setTimeout("typewriter()", 2000);
     }
   } else {
     setTimeout("typewriter()", iSpeed);
